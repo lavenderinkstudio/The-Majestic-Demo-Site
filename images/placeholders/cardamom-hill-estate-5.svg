@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#211E1A"/>
+      <stop offset="1" stop-color="#12110F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="37%" cy="-13%" r="60%">
+      <stop offset="0" stop-color="#B39364" stop-opacity=".2"/>
+      <stop offset=".5" stop-color="#B39364" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#B39364" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="jaali" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M32 4c5 12 15 23 28 28-13 5-23 16-28 28-5-12-15-23-28-28C17 27 27 16 32 4z" fill="none" stroke="#E8DFD2" stroke-opacity=".05"/>
+      <circle cx="32" cy="32" r="5" fill="none" stroke="#E8DFD2" stroke-opacity=".05"/>
+    </pattern>
+    <radialGradient id="fade" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="m"><rect width="1600" height="1067" fill="url(#fade)"/></mask>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#g)"/>
+  <rect width="1600" height="1067" fill="url(#glow)"/>
+  <rect width="1600" height="1067" fill="url(#jaali)" mask="url(#m)"/>
+  <text x="800" y="560" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" letter-spacing="5" fill="#E8DFD2" fill-opacity=".3">PHOTO · CARDAMOM-HILL-ESTATE-5</text>
+</svg>

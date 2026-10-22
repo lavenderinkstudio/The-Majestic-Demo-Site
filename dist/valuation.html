@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Valuation | The Majestic</title>
+  <meta name="description" content="An indicative valuation for a home in India's best addresses, with the workings shown. Then, if you like, a private valuation in person.">
+  <!-- Concept site: kept out of search results -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#12110F">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Majestic">
+  <meta property="og:title" content="Valuation | The Majestic">
+  <meta property="og:description" content="An indicative valuation for a home in India's best addresses, with the workings shown. Then, if you like, a private valuation in person.">
+  <meta property="og:image" content="images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2312110F'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='%23E8DFD2'%3EM%3C/text%3E%3Crect x='8' y='26' width='16' height='1' fill='%23B39364'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/boot.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" integrity="sha384-xb96EMJeax+NLXMC88ZBa1xAeAW+kn+horHh/zFlbMLG2UPWhMJJSlv7fi57hS+Q" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- blocking="render": the first paint waits until the page's content is built, so nothing jumps -->
+  <script type="module" src="js/main.js" blocking="render"></script>
+  <script type="module" src="js/pages/valuation.js" blocking="render"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header" data-header>
+    <div class="header__inner">
+      <a class="wordmark" href="index.html" aria-label="The Majestic, home"><span class="wordmark__the" aria-hidden="true">The</span><span class="wordmark__name" aria-hidden="true">Majestic</span></a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="residences.html">Residences</a></li>
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="valuation.html">Valuation</a></li>
+          <li><a href="agency.html">Agency</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="concierge-btn" type="button" data-concierge-open aria-label="Ask the Concierge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/></svg><span class="concierge-btn__text" aria-hidden="true">Ask the Concierge</span></button>
+        <a class="icon-btn shortlist-link" href="shortlist.html" data-shortlist-link aria-label="Shortlist, 0 saved"><svg class="icon icon--heart" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.3s-7.6-4.6-9.2-9.4C1.7 7.4 3.9 4.2 7.2 4.2c2 0 3.6 1.1 4.8 2.8 1.2-1.7 2.8-2.8 4.8-2.8 3.3 0 5.5 3.2 4.4 6.7-1.6 4.8-9.2 9.4-9.2 9.4z"/></svg><span class="badge" data-shortlist-count></span></a>
+        <a class="pill pill--outline pill--small book-btn" href="agency.html#enquire" data-book-viewing>Book a viewing</a>
+        <button class="icon-btn burger" type="button" aria-label="Open menu" aria-haspopup="dialog" aria-expanded="false" aria-controls="menu" data-menu-open><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <dialog class="menu" id="menu" data-menu aria-label="Menu">
+    <div class="menu__top">
+      <a class="wordmark" href="index.html" aria-label="The Majestic, home"><span class="wordmark__the" aria-hidden="true">The</span><span class="wordmark__name" aria-hidden="true">Majestic</span></a>
+      <button class="round-btn" type="button" data-menu-close aria-label="Close menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="menu__body">
+      <ul class="menu__links">
+        <li><a href="residences.html">Residences <span>01</span></a></li>
+        <li><a href="index.html#destinations">Destinations <span>02</span></a></li>
+        <li><a href="valuation.html">Valuation <span>03</span></a></li>
+        <li><a href="agency.html">The Agency <span>04</span></a></li>
+        <li><a href="shortlist.html">Shortlist <span data-shortlist-count></span></a></li>
+      </ul>
+      <div class="menu__actions">
+        <button class="pill pill--fill" type="button" data-menu-close data-concierge-open><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/></svg>Ask the Concierge</button>
+        <a class="pill pill--outline" href="agency.html#enquire" data-book-viewing>Book a viewing</a>
+      </div>
+      <div class="menu__contact">
+        <a href="tel:+912240000100">+91 22 4000 0100</a>
+        <a href="mailto:hello@themajestic.example">hello@themajestic.example</a>
+      </div>
+    </div>
+  </dialog>
+
+  <main id="main">
+    <section class="band" aria-labelledby="val-title">
+      <div class="band__media"><img src="images/placeholders/valuation-hero.svg" data-slot="valuation-hero" alt="" sizes="100vw" width="1600" height="1067" loading="eager" fetchpriority="high" decoding="async"></div>
+      <div class="wrap">
+        <span class="label">(Valuation)</span>
+        <h1 class="h1" id="val-title" data-reveal="lines">What is your home <em>worth?</em></h1>
+        <p class="lede" data-reveal="fade">An indicative range from local rates, adjusted for your house and shown line by line. It takes a minute. When you'd like a figure to rely on, an adviser will visit.</p>
+      </div>
+    </section>
+
+    <div class="wrap valuation">
+      <div class="valuation__form">
+        <form class="form" data-valuation novalidate aria-label="Valuation calculator">
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="v-locality">Locality</label>
+              <select id="v-locality" name="locality" required data-label="a locality">
+                <option value="">Choose a locality</option>
+                <option value="malabar-hill">Malabar Hill, Mumbai</option>
+                <option value="worli">Worli Sea Face, Mumbai</option>
+                <option value="bandra-west">Bandra West, Mumbai</option>
+                <option value="alibaug">Alibaug coast, Raigad</option>
+                <option value="golf-links">Golf Links, New Delhi</option>
+                <option value="vasant-vihar">Vasant Vihar, New Delhi</option>
+                <option value="golf-course-road">Golf Course Road, Gurugram</option>
+                <option value="lavelle-road">Lavelle Road, Bengaluru</option>
+                <option value="indiranagar">Indiranagar, Bengaluru</option>
+                <option value="assagao">Assagao, North Goa</option>
+                <option value="udaipur-lakeside">Lake Pichola, Udaipur</option>
+                <option value="coorg">Coorg, Kodagu</option>
+                <option value="kasauli">Kasauli, Himachal Pradesh</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="v-area">Built-up area, sq ft</label>
+              <input id="v-area" name="area" type="text" inputmode="numeric" autocomplete="off" placeholder="e.g. 4,500" required data-validate="number" data-min="300" data-max="60000" data-label="the built-up area">
+            </div>
+          </div>
+          <fieldset>
+            <legend>Type of home</legend>
+            <div class="radio-row"><input type="radio" id="v-type-apartment" name="type" value="apartment" checked><label for="v-type-apartment">Apartment</label><input type="radio" id="v-type-penthouse" name="type" value="penthouse"><label for="v-type-penthouse">Penthouse</label><input type="radio" id="v-type-villa" name="type" value="villa"><label for="v-type-villa">Villa</label><input type="radio" id="v-type-bungalow" name="type" value="bungalow"><label for="v-type-bungalow">Bungalow</label><input type="radio" id="v-type-heritage" name="type" value="heritage"><label for="v-type-heritage">Heritage home</label></div>
+          </fieldset>
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="v-age">Age of the building</label>
+              <select id="v-age" name="age">
+                <option value="new">Under 5 years</option>
+                <option value="recent" selected>5 to 15 years</option>
+                <option value="mature">15 to 30 years</option>
+                <option value="old">Over 30 years</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="v-condition">Condition</label>
+              <select id="v-condition" name="condition">
+                <option value="needs-work">Needs work</option>
+                <option value="good" selected>Good</option>
+                <option value="renovated">Recently renovated</option>
+                <option value="designer">Architect-designed interiors</option>
+              </select>
+            </div>
+          </div>
+          <fieldset>
+            <legend>View</legend>
+            <div class="radio-row"><input type="radio" id="v-view-none" name="view" value="none" checked><label for="v-view-none">No particular view</label><input type="radio" id="v-view-garden" name="view" value="garden"><label for="v-view-garden">Garden</label><input type="radio" id="v-view-city" name="view" value="city"><label for="v-view-city">City skyline</label><input type="radio" id="v-view-water" name="view" value="water"><label for="v-view-water">Sea or lake</label></div>
+          </fieldset>
+          <div class="form__row form__row--2">
+            <div class="field" data-floor-field>
+              <label for="v-floor">Floor</label>
+              <select id="v-floor" name="floor" aria-describedby="v-floor-hint">
+                <option value="low">Floors 1 to 5</option>
+                <option value="mid" selected>Floors 6 to 15</option>
+                <option value="high">Floors 16 to 30</option>
+                <option value="top">Above the 30th floor</option>
+              </select>
+              <p class="field__hint" id="v-floor-hint">For apartments and penthouses only.</p>
+            </div>
+            <div class="field">
+              <label for="v-parking">Covered parking spaces</label>
+              <select id="v-parking" name="parking">
+                <option value="0">0</option>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </div>
+          </div>
+          <fieldset>
+            <legend>Outdoor space</legend>
+            <div class="radio-row"><input type="radio" id="v-outdoor-none" name="outdoor" value="none"><label for="v-outdoor-none">None</label><input type="radio" id="v-outdoor-balcony" name="outdoor" value="balcony" checked><label for="v-outdoor-balcony">Balcony</label><input type="radio" id="v-outdoor-terrace" name="outdoor" value="terrace"><label for="v-outdoor-terrace">Private terrace</label><input type="radio" id="v-outdoor-garden" name="outdoor" value="garden"><label for="v-outdoor-garden">Private garden</label></div>
+          </fieldset>
+          <div class="form__foot">
+            <button class="pill pill--fill" type="submit">Estimate value</button>
+            <p class="form__note">Updates as you change anything once you've estimated.</p>
+          </div>
+        </form>
+      </div>
+
+      <aside class="result stone" data-result aria-live="polite" aria-labelledby="result-title">
+        <div class="result__empty">
+          <span class="label">(Your estimate)</span>
+          <h2 class="h3" id="result-title">Your indicative range will appear here.</h2>
+          <p>Choose a locality and enter the built-up area. Everything else is set to typical values you can change.</p>
+        </div>
+      </aside>
+    </div>
+
+    <section class="section enquire" id="request" aria-labelledby="request-title">
+      <div class="wrap grid-12">
+        <div class="enquire__aside">
+          <span class="label">(Private valuation)</span>
+          <h2 class="h2" id="request-title">A figure you can <em>rely on</em></h2>
+          <p>An adviser visits, looks at the title and the comparable sales, and gives you a written valuation within a week. There's no charge and no obligation.</p>
+        </div>
+        <div class="enquire__form">
+          <form class="form" data-form="valuation" novalidate>
+            <div class="form__row form__row--2">
+              <div class="field"><label for="r-name">Full name</label><input id="r-name" name="name" autocomplete="name" required data-label="your name"></div>
+              <div class="field"><label for="r-email">Email</label><input id="r-email" name="email" type="email" autocomplete="email" required data-label="your email address"></div>
+            </div>
+            <div class="form__row form__row--2">
+              <div class="field"><label for="r-mobile">Mobile</label><input id="r-mobile" name="mobile" type="tel" inputmode="tel" autocomplete="tel" placeholder="+91 98200 12345" required data-validate="mobile" data-label="your mobile number"></div>
+              <div class="field"><label for="r-date">Preferred visit date (optional)</label><input id="r-date" name="date" type="date" data-validate="future-date" data-label="a date"></div>
+            </div>
+            <div class="field"><label for="r-address">Address of the home</label><input id="r-address" name="address" autocomplete="street-address" required data-label="the address of the home"></div>
+            <div class="field"><label for="r-message">About the home (optional)</label><textarea id="r-message" name="message" rows="4" data-valuation-summary></textarea></div>
+            <div class="hp" aria-hidden="true"><label for="r-website">Leave this empty</label><input id="r-website" name="website" tabindex="-1" autocomplete="off"></div>
+            <div class="check"><input type="checkbox" id="r-consent" name="consent" required data-msg="Please tick this box so we can arrange the visit."><label for="r-consent">I agree to be contacted to arrange a valuation. We never share your details.</label></div>
+            <div class="form__foot">
+              <button class="pill pill--fill" type="submit">Request a private valuation</button>
+              <p class="form__note">Concept site: nothing is actually sent.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__lead">
+          <span class="label">(Get in touch)</span>
+          <h2>Every house begins with a <em>conversation.</em></h2>
+          <div class="footer__contact">
+            <a href="mailto:hello@themajestic.example">hello@themajestic.example</a>
+            <a href="tel:+912240000100">+91 22 4000 0100</a>
+          </div>
+        </div>
+        <div class="footer__cols">
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="residences.html">Residences</a></li>
+              <li><a href="index.html#destinations">Destinations</a></li>
+              <li><a href="valuation.html">Valuation</a></li>
+              <li><a href="agency.html">The Agency</a></li>
+              <li><a href="shortlist.html">Your shortlist</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Offices</h3>
+            <ul>
+              <li class="footer__office"><strong>Mumbai</strong>Mon–Sat, 10am–7pm</li>
+              <li class="footer__office"><strong>New Delhi</strong>Mon–Sat, 10am–7pm</li>
+              <li class="footer__office"><strong>Bengaluru</strong>Mon–Sat, 10am–7pm</li>
+              <li class="footer__office"><strong>Goa</strong>By appointment</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#" data-concierge-open>Ask the Concierge</a></li>
+              <li><a href="agency.html#enquire">Book a viewing</a></li>
+              <li><a href="valuation.html#request">Private valuation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="footer__mark" aria-hidden="true">Majestic</p>
+      <div class="footer__base">
+        <p>&copy; 2026 The Majestic</p>
+        <p>Concept site · Fictional properties, people and prices. Nothing here is for sale.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

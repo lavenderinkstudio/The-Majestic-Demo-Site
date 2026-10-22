@@ -1,0 +1,11 @@
+# Netlify: publish only the built site (tools/build.sh copies the runtime files into dist/)
+# and serve the AI concierge from netlify/functions/concierge.mjs at /api/concierge.
+# Security headers are in _headers.
+
+[build]
+  command = "sh tools/build.sh"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Residences | The Majestic</title>
+  <meta name="description" content="Eight private residences across India, from a lakeside haveli in Udaipur to a coffee estate in Coorg. Filter by region, budget and lifestyle.">
+  <!-- Concept site: kept out of search results -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#12110F">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Majestic">
+  <meta property="og:title" content="Residences | The Majestic">
+  <meta property="og:description" content="Eight private residences across India, from a lakeside haveli in Udaipur to a coffee estate in Coorg. Filter by region, budget and lifestyle.">
+  <meta property="og:image" content="images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2312110F'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='%23E8DFD2'%3EM%3C/text%3E%3Crect x='8' y='26' width='16' height='1' fill='%23B39364'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha384-c6Rcwz4e4CITMbu/NBmnNS8yN2sC3cUElMEMfP3vqqKFp7GOYaaBBCqmaWBjmkjb" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/boot.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" integrity="sha384-xb96EMJeax+NLXMC88ZBa1xAeAW+kn+horHh/zFlbMLG2UPWhMJJSlv7fi57hS+Q" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha384-NElt3Op+9NBMCYaef5HxeJmU4Xeard/Lku8ek6hoPTvYkQPh3zLIrJP7KiRocsxO" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- blocking="render": the first paint waits until the page's content is built, so nothing jumps -->
+  <script type="module" src="js/main.js" blocking="render"></script>
+  <script type="module" src="js/pages/residences.js" blocking="render"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header" data-header>
+    <div class="header__inner">
+      <a class="wordmark" href="index.html" aria-label="The Majestic, home"><span class="wordmark__the" aria-hidden="true">The</span><span class="wordmark__name" aria-hidden="true">Majestic</span></a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="residences.html">Residences</a></li>
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="valuation.html">Valuation</a></li>
+          <li><a href="agency.html">Agency</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="concierge-btn" type="button" data-concierge-open aria-label="Ask the Concierge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/></svg><span class="concierge-btn__text" aria-hidden="true">Ask the Concierge</span></button>
+        <a class="icon-btn shortlist-link" href="shortlist.html" data-shortlist-link aria-label="Shortlist, 0 saved"><svg class="icon icon--heart" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.3s-7.6-4.6-9.2-9.4C1.7 7.4 3.9 4.2 7.2 4.2c2 0 3.6 1.1 4.8 2.8 1.2-1.7 2.8-2.8 4.8-2.8 3.3 0 5.5 3.2 4.4 6.7-1.6 4.8-9.2 9.4-9.2 9.4z"/></svg><span class="badge" data-shortlist-count></span></a>
+        <a class="pill pill--outline pill--small book-btn" href="agency.html#enquire" data-book-viewing>Book a viewing</a>
+        <button class="icon-btn burger" type="button" aria-label="Open menu" aria-haspopup="dialog" aria-expanded="false" aria-controls="menu" data-menu-open><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <dialog class="menu" id="menu" data-menu aria-label="Menu">
+    <div class="menu__top">
+      <a class="wordmark" href="index.html" aria-label="The Majestic, home"><span class="wordmark__the" aria-hidden="true">The</span><span class="wordmark__name" aria-hidden="true">Majestic</span></a>
+      <button class="round-btn" type="button" data-menu-close aria-label="Close menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="menu__body">
+      <ul class="menu__links">
+        <li><a href="residences.html">Residences <span>01</span></a></li>
+        <li><a href="index.html#destinations">Destinations <span>02</span></a></li>
+        <li><a href="valuation.html">Valuation <span>03</span></a></li>
+        <li><a href="agency.html">The Agency <span>04</span></a></li>
+        <li><a href="shortlist.html">Shortlist <span data-shortlist-count></span></a></li>
+      </ul>
+      <div class="menu__actions">
+        <button class="pill pill--fill" type="button" data-menu-close data-concierge-open><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/></svg>Ask the Concierge</button>
+        <a class="pill pill--outline" href="agency.html#enquire" data-book-viewing>Book a viewing</a>
+      </div>
+      <div class="menu__contact">
+        <a href="tel:+912240000100">+91 22 4000 0100</a>
+        <a href="mailto:hello@themajestic.example">hello@themajestic.example</a>
+      </div>
+    </div>
+  </dialog>
+
+  <main id="main">
+    <header class="page-head wrap">
+      <span class="label">(Residences)</span>
+      <h1 class="h1" data-reveal="lines">Eight houses, <em>each with a story</em></h1>
+      <p class="lede" data-reveal="fade">From a haveli on Lake Pichola to a planter's bungalow in Coorg. Filter by place, budget or the way you'd like to live, or describe it to the concierge.</p>
+    </header>
+
+    <div class="wrap">
+      <form class="filters" data-filters aria-label="Filter residences">
+        <div class="filters__panel" id="filter-panel" data-filter-panel>
+          <div class="filters__sheet-head">
+            <h2>Filters</h2>
+            <button class="round-btn" type="button" data-filters-close aria-label="Close filters"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+          </div>
+          <div class="filters__grid">
+            <fieldset class="filters__group">
+              <legend>Region</legend>
+              <div class="chips" data-chips="region"></div>
+            </fieldset>
+            <div class="filters__selects">
+              <div class="field"><label for="f-type">Type</label><select id="f-type" name="type"></select></div>
+              <div class="field"><label for="f-min">Budget from</label><select id="f-min" name="min"></select></div>
+              <div class="field"><label for="f-max">Budget to</label><select id="f-max" name="max"></select></div>
+              <div class="field"><label for="f-beds">Bedrooms</label><select id="f-beds" name="beds"></select></div>
+            </div>
+            <details class="filters__more" data-more>
+              <summary>Lifestyle</summary>
+              <div class="chips" data-chips="life" role="group" aria-label="Lifestyle"></div>
+            </details>
+          </div>
+          <div class="filters__sheet-foot">
+            <button class="clear-btn" type="button" data-clear>Clear all</button>
+            <button class="pill pill--fill" type="button" data-filters-close data-show-count>Show residences</button>
+          </div>
+        </div>
+
+        <div class="results-bar">
+          <p class="results-bar__count" data-count-text aria-live="polite"></p>
+          <button class="pill pill--outline pill--small filters-toggle" type="button" data-filters-open aria-expanded="false" aria-controls="filter-panel">Filters <span class="filters-toggle__n" data-active-n></span></button>
+          <button class="clear-btn" type="button" data-clear data-clear-bar hidden>Clear all</button>
+          <div class="field"><label for="f-sort">Sort</label><select id="f-sort" name="sort"></select></div>
+          <div class="view-toggle" role="group" aria-label="Show as">
+            <button type="button" data-view="list" aria-pressed="true">List</button>
+            <button type="button" data-view="map" aria-pressed="false">Map</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="results" data-results>
+        <div class="res-list" data-list></div>
+        <div class="res-map-wrap">
+          <div class="res-map map" data-map role="region" aria-label="Map of the residences shown"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__lead">
+          <span class="label">(Get in touch)</span>
+          <h2>Every house begins with a <em>conversation.</em></h2>
+          <div class="footer__contact">
+            <a href="mailto:hello@themajestic.example">hello@themajestic.example</a>
+            <a href="tel:+912240000100">+91 22 4000 0100</a>
+          </div>
+        </div>
+        <div class="footer__cols">
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="residences.html">Residences</a></li>
+              <li><a href="index.html#destinations">Destinations</a></li>
+              <li><a href="valuation.html">Valuation</a></li>
+              <li><a href="agency.html">The Agency</a></li>
+              <li><a href="shortlist.html">Your shortlist</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Offices</h3>
+            <ul>
+              <li class="footer__office"><strong>Mumbai</strong>Mon–Sat, 10am–7pm</li>
+              <li class="footer__office"><strong>New Delhi</strong>Mon–Sat, 10am–7pm</li>
+              <li class="footer__office"><strong>Bengaluru</strong>Mon–Sat, 10am–7pm</li>
+              <li class="footer__office"><strong>Goa</strong>By appointment</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#" data-concierge-open>Ask the Concierge</a></li>
+              <li><a href="agency.html#enquire">Book a viewing</a></li>
+              <li><a href="valuation.html#request">Private valuation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="footer__mark" aria-hidden="true">Majestic</p>
+      <div class="footer__base">
+        <p>&copy; 2026 The Majestic</p>
+        <p>Concept site · Fictional properties, people and prices. Nothing here is for sale.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

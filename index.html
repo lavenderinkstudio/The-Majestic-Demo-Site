@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The Majestic | Private residences across India</title>
+  <meta name="description" content="A boutique advisory for remarkable homes in India: havelis, sea-facing villas, hill retreats and city penthouses, shown by appointment.">
+  <!-- Concept site: kept out of search results -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#12110F">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Majestic">
+  <meta property="og:title" content="The Majestic | Private residences across India">
+  <meta property="og:description" content="A boutique advisory for remarkable homes in India: havelis, sea-facing villas, hill retreats and city penthouses, shown by appointment.">
+  <meta property="og:image" content="images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2312110F'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='%23E8DFD2'%3EM%3C/text%3E%3Crect x='8' y='26' width='16' height='1' fill='%23B39364'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/boot.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" integrity="sha384-xb96EMJeax+NLXMC88ZBa1xAeAW+kn+horHh/zFlbMLG2UPWhMJJSlv7fi57hS+Q" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- blocking="render": the first paint waits until the page's content is built, so nothing jumps -->
+  <script type="module" src="js/main.js" blocking="render"></script>
+  <script type="module" src="js/pages/home.js" blocking="render"></script>
+</head>
+<body data-overlay-header>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header" data-header>
+    <div class="header__inner">
+      <a class="wordmark" href="index.html" aria-label="The Majestic, home"><span class="wordmark__the" aria-hidden="true">The</span><span class="wordmark__name" aria-hidden="true">Majestic</span></a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="residences.html">Residences</a></li>
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="valuation.html">Valuation</a></li>
+          <li><a href="agency.html">Agency</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="concierge-btn" type="button" data-concierge-open aria-label="Ask the Concierge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/></svg><span class="concierge-btn__text" aria-hidden="true">Ask the Concierge</span></button>
+        <a class="icon-btn shortlist-link" href="shortlist.html" data-shortlist-link aria-label="Shortlist, 0 saved"><svg class="icon icon--heart" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.3s-7.6-4.6-9.2-9.4C1.7 7.4 3.9 4.2 7.2 4.2c2 0 3.6 1.1 4.8 2.8 1.2-1.7 2.8-2.8 4.8-2.8 3.3 0 5.5 3.2 4.4 6.7-1.6 4.8-9.2 9.4-9.2 9.4z"/></svg><span class="badge" data-shortlist-count></span></a>
+        <a class="pill pill--outline pill--small book-btn" href="agency.html#enquire" data-book-viewing>Book a viewing</a>
+        <button class="icon-btn burger" type="button" aria-label="Open menu" aria-haspopup="dialog" aria-expanded="false" aria-controls="menu" data-menu-open><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <dialog class="menu" id="menu" data-menu aria-label="Menu">
+    <div class="menu__top">
+      <a class="wordmark" href="index.html" aria-label="The Majestic, home"><span class="wordmark__the" aria-hidden="true">The</span><span class="wordmark__name" aria-hidden="true">Majestic</span></a>
+      <button class="round-btn" type="button" data-menu-close aria-label="Close menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="menu__body">
+      <ul class="menu__links">
+        <li><a href="residences.html">Residences <span>01</span></a></li>
+        <li><a href="index.html#destinations">Destinations <span>02</span></a></li>
+        <li><a href="valuation.html">Valuation <span>03</span></a></li>
+        <li><a href="agency.html">The Agency <span>04</span></a></li>
+        <li><a href="shortlist.html">Shortlist <span data-shortlist-count></span></a></li>
+      </ul>
+      <div class="menu__actions">
+        <button class="pill pill--fill" type="button" data-menu-close data-concierge-open><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/></svg>Ask the Concierge</button>
+        <a class="pill pill--outline" href="agency.html#enquire" data-book-viewing>Book a viewing</a>
+      </div>
+      <div class="menu__contact">
+        <a href="tel:+912240000100">+91 22 4000 0100</a>
+        <a href="mailto:hello@themajestic.example">hello@themajestic.example</a>
+      </div>
+    </div>
+  </dialog>
+
+  <main id="main">
+    <section class="hero" data-hero aria-labelledby="hero-title">
+      <figure class="hero__media"><img src="images/placeholders/home-hero.svg" data-slot="home-hero" alt="" sizes="100vw" width="1600" height="1067" loading="eager" fetchpriority="high" decoding="async"></figure>
+      <div class="hero__intro">
+        <p class="hero__tagline">Private residences across India</p>
+        <span class="hero__line" aria-hidden="true"></span>
+        <p class="hero__lede">Eight remarkable homes, from the Konkan coast to the deodar hills, shown quietly and only by appointment.</p>
+      </div>
+      <h1 class="hero__mark" id="hero-title"><span class="hero__the">The</span><span class="hero__name">Majestic</span></h1>
+      <form class="search" action="residences.html" method="get" data-search aria-label="Search residences">
+        <div class="field">
+          <label for="s-region">Location</label>
+          <select id="s-region" name="region">
+            <option value="">Anywhere in India</option>
+            <option value="coast">Coast · Alibaug & Goa</option>
+            <option value="heritage">Heritage · Udaipur & New Delhi</option>
+            <option value="hills">Hills · Coorg & Kasauli</option>
+            <option value="city">City · Mumbai & Bengaluru</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="s-type">Type</label>
+          <select id="s-type" name="type">
+            <option value="">Any type</option>
+            <option value="villa">Villa</option>
+            <option value="penthouse">Penthouse</option>
+            <option value="bungalow">Bungalow</option>
+            <option value="haveli">Haveli</option>
+            <option value="estate">Plantation estate</option>
+            <option value="residence">Garden residence</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="s-max">Budget</label>
+          <select id="s-max" name="max">
+            <option value="">Any budget</option>
+            <option value="15">Up to ₹15 Cr</option>
+            <option value="25">Up to ₹25 Cr</option>
+            <option value="50">Up to ₹50 Cr</option>
+            <option value="100">Up to ₹100 Cr</option>
+          </select>
+        </div>
+        <div class="search__go"><button class="pill pill--fill pill--block" type="submit" aria-label="Search residences"><span>Search residences</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></div>
+      </form>
+    </section>
+
+    <section class="section house" aria-labelledby="house-title">
+      <div class="wrap grid-12">
+        <span class="label">(The House)</span>
+        <h2 class="house__statement" id="house-title" data-reveal="lines">We represent a few of India's most remarkable homes, and know each one by heart: <span>its light at four in the afternoon, the sound of its rain, the families who lived there before.</span></h2>
+      </div>
+      <div class="wrap grid-12 house__body">
+        <div class="frame house__img" data-reveal="image"><img src="images/placeholders/home-house.svg" data-slot="home-house" alt="A brass lamp glowing in a dark room" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1067" loading="lazy" decoding="async"></div>
+        <div class="house__copy">
+          <p class="lede" data-reveal="fade">The Majestic is a private advisory, not a listings portal. Most of the houses we sell are never advertised. We show them by appointment, and one adviser stays with you from the first visit to the registration.</p>
+          <ul class="stats" data-reveal="stagger">
+            <li class="stat"><span class="stat__num" data-count="18" aria-hidden="true">18</span><span class="stat__label"><span class="visually-hidden">18 </span>years of private advisory</span></li>
+            <li class="stat"><span class="stat__num" data-count="2400" data-prefix="₹" data-suffix=" Cr" aria-hidden="true">₹2,400 Cr</span><span class="stat__label"><span class="visually-hidden">₹2,400 crore </span>in homes placed</span></li>
+            <li class="stat"><span class="stat__num" data-count="96" data-suffix="%" aria-hidden="true">96%</span><span class="stat__label"><span class="visually-hidden">96% </span>sold privately, never listed</span></li>
+            <li class="stat"><span class="stat__num" data-count="11" aria-hidden="true">11</span><span class="stat__label"><span class="visually-hidden">11 </span>cities and hill towns</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured" aria-labelledby="featured-title">
+      <div class="wrap">
+        <div class="section__head section__head--split">
+          <div>
+            <span class="label">(Residences)</span>
+            <h2 class="h2" id="featured-title" data-reveal="lines">Three houses we'd <em>show you first</em></h2>
+          </div>
+          <a class="text-link" href="residences.html">All eight residences <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+        <div class="featured__stage" data-featured role="region" aria-roledescription="carousel" aria-label="Featured residences"></div>
+        <div class="featured__controls">
+          <button class="round-btn" type="button" data-feat-prev aria-label="Previous residence"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5m6-6-6 6 6 6"/></svg></button>
+          <button class="round-btn" type="button" data-feat-next aria-label="Next residence"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+          <span class="featured__count" data-feat-count>01 / 03</span>
+          <span class="featured__bar" aria-hidden="true"><span></span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dest" id="destinations" data-destinations aria-labelledby="dest-title">
+      <div class="dest__stage">
+        <div class="wrap dest__head section__head">
+          <span class="label">(Destinations)</span>
+          <h2 class="h2" id="dest-title">Four kinds of <em>somewhere</em></h2>
+        </div>
+        <div class="wrap dest__panels">
+          <article class="dest-panel" id="dest-coast" aria-labelledby="dest-coast-title">
+            <div class="dest-panel__media"><img src="images/placeholders/destination-coast.svg" data-slot="destination-coast" alt="The sun setting over the Arabian Sea from the rocks" sizes="100vw" width="1600" height="1067" loading="lazy" decoding="async"></div>
+            <div class="dest-panel__text">
+              <p class="dest-panel__kicker">01 · Coast · Alibaug & Goa</p>
+              <h3 class="dest-panel__title" id="dest-coast-title">Where the monsoon <em>arrives first</em></h3>
+              <p class="dest-panel__copy">Basalt shores, cashew groves and restored Goan villas, an hour or so from Mumbai by sea.</p>
+              <a class="text-link" href="residences.html?region=coast">See 2 coast residences <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="dest-panel" id="dest-heritage" aria-labelledby="dest-heritage-title">
+            <div class="dest-panel__media"><img src="images/placeholders/destination-heritage.svg" data-slot="destination-heritage" alt="Udaipur and its lakes at twilight" sizes="100vw" width="1600" height="1067" loading="lazy" decoding="async"></div>
+            <div class="dest-panel__text">
+              <p class="dest-panel__kicker">02 · Heritage · Udaipur & New Delhi</p>
+              <h3 class="dest-panel__title" id="dest-heritage-title">Houses that already <em>have a past</em></h3>
+              <p class="dest-panel__copy">Havelis on the lake and bungalows of the 1930s, restored without losing their patina.</p>
+              <a class="text-link" href="residences.html?region=heritage">See 2 heritage residences <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="dest-panel" id="dest-hills" aria-labelledby="dest-hills-title">
+            <div class="dest-panel__media"><img src="images/placeholders/destination-hills.svg" data-slot="destination-hills" alt="Mist lying in the folds of forested hills" sizes="100vw" width="1600" height="1067" loading="lazy" decoding="async"></div>
+            <div class="dest-panel__text">
+              <p class="dest-panel__kicker">03 · Hills · Coorg & Kasauli</p>
+              <h3 class="dest-panel__title" id="dest-hills-title">Cooler air, <em>slower mornings</em></h3>
+              <p class="dest-panel__copy">Coffee estates in the Western Ghats and deodar forests on the ridges above Chandigarh.</p>
+              <a class="text-link" href="residences.html?region=hills">See 2 hills residences <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="dest-panel" id="dest-city" aria-labelledby="dest-city-title">
+            <div class="dest-panel__media"><img src="images/placeholders/destination-city.svg" data-slot="destination-city" alt="The Queen&#39;s Necklace along Marine Drive at night" sizes="100vw" width="1600" height="1067" loading="lazy" decoding="async"></div>
+            <div class="dest-panel__text">
+              <p class="dest-panel__kicker">04 · City · Mumbai & Bengaluru</p>
+              <h3 class="dest-panel__title" id="dest-city-title">The quiet address in <em>a loud city</em></h3>
+              <p class="dest-panel__copy">A duplex above the Arabian Sea, and a garden residence a minute from Cubbon Park.</p>
+              <a class="text-link" href="residences.html?region=city">See 2 city residences <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            </div>
+          </article>
+        </div>
+        <nav class="dest__index" aria-label="Destinations">
+          <a href="#dest-coast">Coast</a>
+          <a href="#dest-heritage">Heritage</a>
+          <a href="#dest-hills">Hills</a>
+          <a href="#dest-city">City</a>
+        </nav>
+        <div class="dest__progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <section class="section principles" aria-labelledby="principles-title">
+      <div class="wrap grid-12">
+        <div class="principles__aside">
+          <div class="frame principles__img" data-reveal="image"><img src="images/placeholders/principles.svg" data-slot="principles" alt="A long arcade of carved arches in warm light" sizes="(min-width: 900px) 40vw, 100vw" width="1600" height="1067" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="principles__main">
+          <span class="label">(Our way)</span>
+          <h2 class="h2" id="principles-title" data-reveal="lines">Five things <em>we hold to</em></h2>
+          <ol class="principles__list" data-reveal="stagger">
+            <li class="principle"><span class="principle__no">01</span><h3>Few houses, fully known</h3><p>We take on a handful of homes a year, and visit each one in every season before we show it to anyone.</p></li>
+            <li class="principle"><span class="principle__no">02</span><h3>Shown by appointment</h3><p>Our residences are seen in person, with an adviser, at the hour each house looks its best. Never at an open house.</p></li>
+            <li class="principle"><span class="principle__no">03</span><h3>One adviser, start to finish</h3><p>The person who first shows you a house is the person who sits beside you at the registration.</p></li>
+            <li class="principle"><span class="principle__no">04</span><h3>Discretion by default</h3><p>Many of our sellers and buyers prefer not to be known. Names, prices and addresses stay private until you ask.</p></li>
+            <li class="principle"><span class="principle__no">05</span><h3>Honest numbers</h3><p>Every price comes with comparable sales, and every valuation with its workings. If a house is overpriced, we'll say so.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cchapter" aria-labelledby="cc-title">
+      <div class="wrap grid-12">
+        <div class="cchapter__main">
+          <span class="label">(Concierge)</span>
+          <h2 class="h2" id="cc-title" data-reveal="lines">Describe a life. <em>We'll suggest the house.</em></h2>
+          <p class="lede">Tell the concierge what you're picturing: the sea or the hills, a family of five, a budget, a slower pace. It suggests residences from the collection and says why each might suit you. An adviser takes it from there.</p>
+          <form class="prompt" data-prompt>
+            <div class="field">
+              <label for="cc-input">What are you looking for?</label>
+              <input id="cc-input" name="q" type="text" maxlength="1000" autocomplete="off" placeholder="A weekend house near Mumbai, with a pool">
+            </div>
+            <button class="round-btn round-btn--lg" type="submit" aria-label="Ask the Concierge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+          </form>
+          <div class="chips" role="group" aria-label="Or try one of these">
+            <button class="chip" type="button" data-concierge-open data-concierge-prompt="Sea-facing weekend home">Sea-facing weekend home</button>
+            <button class="chip" type="button" data-concierge-open data-concierge-prompt="Heritage with character">Heritage with character</button>
+            <button class="chip" type="button" data-concierge-open data-concierge-prompt="Under ₹20 Cr">Under ₹20 Cr</button>
+            <button class="chip" type="button" data-concierge-open data-concierge-prompt="For a family of five">For a family of five</button>
+          </div>
+        </div>
+        <div class="cchapter__visual">
+          <div class="frame cchapter__img" data-reveal="image"><img src="images/placeholders/concierge.svg" data-slot="concierge" alt="An armchair under a lamp beside shuttered windows" sizes="(min-width: 900px) 35vw, 100vw" width="1600" height="1067" loading="lazy" decoding="async"></div>
+          <div class="sample" aria-hidden="true" data-reveal="fade">
+            <p class="sample__you">Somewhere by the water, with real history, under ₹50 Cr</p>
+            <p class="sample__bot">Jharokha Haveli has its own ghat on Lake Pichola, and frescoes from the 1780s.</p>
+            <p class="sample__pick"><strong>Jharokha Haveli</strong><span>Udaipur · ₹45 Cr</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight vteaser" aria-labelledby="vt-title">
+      <div class="wrap grid-12">
+        <div class="vteaser__text">
+          <span class="label">(Valuation)</span>
+          <h2 class="h3" id="vt-title">What might your home be worth?</h2>
+          <p>An indicative range in a minute, with the workings shown. For a figure you can rely on, an adviser will visit.</p>
+        </div>
+        <form class="vteaser__form" action="valuation.html" method="get">
+          <div class="field">
+            <label for="vt-locality">Locality</label>
+            <select id="vt-locality" name="locality">
+              <option value="malabar-hill">Malabar Hill, Mumbai</option>
+              <option value="worli">Worli Sea Face, Mumbai</option>
+              <option value="bandra-west">Bandra West, Mumbai</option>
+              <option value="alibaug">Alibaug coast, Raigad</option>
+              <option value="golf-links">Golf Links, New Delhi</option>
+              <option value="vasant-vihar">Vasant Vihar, New Delhi</option>
+              <option value="golf-course-road">Golf Course Road, Gurugram</option>
+              <option value="lavelle-road">Lavelle Road, Bengaluru</option>
+              <option value="indiranagar">Indiranagar, Bengaluru</option>
+              <option value="assagao">Assagao, North Goa</option>
+              <option value="udaipur-lakeside">Lake Pichola, Udaipur</option>
+              <option value="coorg">Coorg, Kodagu</option>
+              <option value="kasauli">Kasauli, Himachal Pradesh</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="vt-area">Built-up area, sq ft</label>
+            <input id="vt-area" name="area" type="text" inputmode="numeric" placeholder="4,500" autocomplete="off">
+          </div>
+          <button class="pill pill--outline" type="submit">Estimate</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="closing" data-closing>
+    <section class="section faq" data-faq aria-labelledby="faq-title">
+      <div class="wrap grid-12">
+        <div class="faq__head">
+          <span class="label">(Questions)</span>
+          <h2 class="h2" id="faq-title" data-reveal="lines">Asked <em>often</em></h2>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item"><summary>Can buyers living abroad purchase through you?</summary><p>Yes. Non-resident Indians and OCI cardholders can buy homes in India, though not agricultural land or plantations. We work with lawyers who handle the paperwork, and we can run a first viewing by video before you fly in.</p></details>
+          <details class="faq__item"><summary>How does a private viewing work?</summary><p>We agree a time with you, and your adviser meets you at the house. Take as long as you like; most viewings fill an afternoon. Nobody else will be there.</p></details>
+          <details class="faq__item"><summary>Why aren't all your homes listed here?</summary><p>Many owners prefer privacy. The eight residences on this site belong to sellers who are happy to be seen. Your adviser can tell you about others in confidence.</p></details>
+          <details class="faq__item"><summary>What does the online valuation tell me?</summary><p>An indicative range, from local rates adjusted for the house itself. It can't see the light, the neighbours or the title deeds. For a figure to rely on, an adviser will visit.</p></details>
+          <details class="faq__item"><summary>Do you handle due diligence?</summary><p>We arrange title searches, RERA checks for newer buildings and a structural survey for older homes, all through independent firms. You receive every report in full.</p></details>
+          <details class="faq__item"><summary>What do you charge?</summary><p>Buyers pay us nothing. Sellers pay an agreed fee on completion, set out in writing before we begin.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="curtain" data-curtain aria-labelledby="curtain-title">
+      <div class="jaali" aria-hidden="true"></div>
+      <div class="curtain__inner">
+        <span class="label">(Private viewings)</span>
+        <h2 id="curtain-title" data-reveal="lines">Arrange a <em>private viewing</em></h2>
+        <p class="lede">Choose a house, or tell us what you're looking for. An adviser will call to find a time that suits you, usually within a day.</p>
+        <div class="curtain__actions">
+          <a class="pill pill--fill" href="#enquire">Book a viewing</a>
+          <button class="pill pill--outline" type="button" data-concierge-open><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/></svg>Ask the Concierge</button>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <section class="section enquire" id="enquire" aria-labelledby="enquire-title">
+      <div class="wrap grid-12">
+        <div class="enquire__aside">
+          <span class="label">(Enquire)</span>
+          <h2 class="h2" id="enquire-title">Begin a <em>conversation</em></h2>
+          <p>Tell us a little about what you're looking for. An adviser replies personally, within a working day.</p>
+          <div class="enquire__contact">
+            <a href="tel:+912240000100">+91 22 4000 0100</a>
+            <a href="mailto:hello@themajestic.example">hello@themajestic.example</a>
+          </div>
+        </div>
+        <div class="enquire__form">
+        <form class="form" data-form="general" novalidate>
+          
+          <div class="form__row form__row--2">
+            <div class="field"><label for="home-name">Full name</label><input id="home-name" name="name" autocomplete="name" required data-label="your name"></div>
+            <div class="field"><label for="home-email">Email</label><input id="home-email" name="email" type="email" autocomplete="email" required data-label="your email address"></div>
+          </div>
+          <div class="form__row form__row--2">
+            <div class="field"><label for="home-mobile">Mobile</label><input id="home-mobile" name="mobile" type="tel" inputmode="tel" autocomplete="tel" placeholder="+91 98200 12345" required data-validate="mobile" data-label="your mobile number"></div>
+            <div class="field"><label for="home-interest">I'm interested in</label><select id="home-interest" name="interest" required data-label="what you're interested in"><option value="">Choose one</option><option>Buying a home</option><option>Selling a home</option><option>A private valuation</option><option>Something else</option></select></div>
+          </div>
+          <div class="field"><label for="home-message">Message (optional)</label><textarea id="home-message" name="message" rows="4" placeholder="What you're looking for, and when you'd like to talk"></textarea></div>
+          <div class="hp" aria-hidden="true"><label for="home-website">Leave this empty</label><input id="home-website" name="website" tabindex="-1" autocomplete="off"></div>
+          <div class="check"><input type="checkbox" id="home-consent" name="consent" required data-msg="Please tick this box so we can reply to you."><label for="home-consent">I agree to be contacted about this enquiry. We never share your details.</label></div>
+          <div class="form__foot">
+            <button class="pill pill--fill" type="submit">Send enquiry</button>
+            <p class="form__note">Concept site: nothing is actually sent.</p>
+          </div>
+        </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__lead">
+          <span class="label">(Get in touch)</span>
+          <h2>Every house begins with a <em>conversation.</em></h2>
+          <div class="footer__contact">
+            <a href="mailto:hello@themajestic.example">hello@themajestic.example</a>
+            <a href="tel:+912240000100">+91 22 4000 0100</a>
+          </div>
+        </div>
+        <div class="footer__cols">
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="residences.html">Residences</a></li>
+              <li><a href="index.html#destinations">Destinations</a></li>
+              <li><a href="valuation.html">Valuation</a></li>
+              <li><a href="agency.html">The Agency</a></li>
+              <li><a href="shortlist.html">Your shortlist</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Offices</h3>
+            <ul>
+              <li class="footer__office"><strong>Mumbai</strong>Mon–Sat, 10am–7pm</li>
+              <li class="footer__office"><strong>New Delhi</strong>Mon–Sat, 10am–7pm</li>
+              <li class="footer__office"><strong>Bengaluru</strong>Mon–Sat, 10am–7pm</li>
+              <li class="footer__office"><strong>Goa</strong>By appointment</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#" data-concierge-open>Ask the Concierge</a></li>
+              <li><a href="agency.html#enquire">Book a viewing</a></li>
+              <li><a href="valuation.html#request">Private valuation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="footer__mark" aria-hidden="true">Majestic</p>
+      <div class="footer__base">
+        <p>&copy; 2026 The Majestic</p>
+        <p>Concept site · Fictional properties, people and prices. Nothing here is for sale.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
